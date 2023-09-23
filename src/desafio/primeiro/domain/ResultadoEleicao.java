@@ -1,10 +1,13 @@
 package desafio.primeiro.domain;
 
 public class ResultadoEleicao {
+
+    private static final double PERCENTUAL_DEFAULT = 100.0;
     private int totalEleitores;
     private int votosValidos;
     private int votosBrancos;
     private int votosNulos;
+
     public ResultadoEleicao(final int totalEleitores,
                             final int votosValidos,
                             final int votosBrancos,
@@ -20,14 +23,14 @@ public class ResultadoEleicao {
         this.votosNulos = votosNulos;
     }
     public double calcularPercentualVotosValidos() {
-        return (votosValidos * 100.0) / totalEleitores;
+        return (votosValidos * PERCENTUAL_DEFAULT) / totalEleitores;
     }
 
     public double calcularPercentualVotosBrancos() {
-        return (votosBrancos * 100.0) / totalEleitores;
+        return (votosBrancos * PERCENTUAL_DEFAULT) / totalEleitores;
     }
 
     public double calcularPercentualVotosNulos() {
-        return (votosNulos * 100.0) / totalEleitores;
+        return (votosNulos * PERCENTUAL_DEFAULT) / totalEleitores;
     }
 }
