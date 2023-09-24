@@ -1,10 +1,10 @@
 package desafio.segundo.domain;
 
 public class BubbleSort {
-    private static final int MIN_ARRAY_LENGTH = 1;
+    private static final int QUANTIDADE_MINIMA_LENGTH = 1;
 
     public void sort(int[] array) {
-        if (array == null || MIN_ARRAY_LENGTH >= array.length) {
+        if (array == null || QUANTIDADE_MINIMA_LENGTH >= array.length) {
             return;
         }
 
